@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* Branding */
+#logomark {
+  width: 100px;
+  height: 100px;
+}
+
+.tagline {
+  font-family: "Catamaran", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+/* Nav */
+nav {
+  padding: 0.3rem 0 1rem 0;
+}
+nav div {
+  padding: 0.5rem;
+}
+
+nav div p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #0aadbe;
+}
+
+/* Socials */
+.socials {
+  padding: 0.6rem;
+}
+.socials a {
+  padding: 0.4rem;
+}
+.social-gh:hover i {
+  color: #6e5494;
+}
+.social-in:hover i {
+  color: #0077b5;
+}
+.social-ig:hover i {
+  color: #e1306c;
+}
+
+/* Utilties */
+.is-cd-primary {
+  background: #0aadbe;
+  color: #fff;
+}
+
+.is-cd-primary:hover {
+  background: #0997a6;
+  color: #fff;
+}
+
+li a {
+  border-bottom: 1px solid #222;
+}
+
+li a:hover {
+  border-bottom: 2px solid #0aadbe;
+}
+
+/* Everett */
+.has-text-orange {
+  color: rgb(219, 99, 39) !important;
+}
