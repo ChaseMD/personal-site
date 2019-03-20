@@ -213,40 +213,52 @@
               </div>
             </div>
             <div class="column">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Chase Dooley" />
-                </div>
-                <label class="label">Email</label>
-                <div class="control">
-                  <input
-                    class="input"
-                    type="text"
-                    placeholder="hello@chasedooley.com"
-                  />
-                </div>
-                <label class="label">Regarding</label>
-                <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Employment</option>
-                      <option>Project Proposal</option>
-                      <option>Site Related</option>
-                      <option>Other</option>
-                    </select>
+              <form action="POST" data-netlify="true" name="contact">
+                <div class="field">
+                  <label class="label" name="name">Name</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Chase Dooley"
+                      name="name"
+                    />
+                  </div>
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="hello@chasedooley.com"
+                      name="email"
+                    />
+                  </div>
+                  <label class="label">Regarding</label>
+                  <div class="control">
+                    <div class="select">
+                      <select name="selection">
+                        <option>Employment</option>
+                        <option>Project Proposal</option>
+                        <option>Site Related</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label class="label">Message</label>
+                  <textarea
+                    class="textarea"
+                    placeholder="Hi, Chase..."
+                    name="message"
+                  ></textarea>
+                  <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                  <div class="control">
+                    <p>I'll respond as soon as possible (within 24 hours)!</p>
+                    <button class="button is-cd-primary">Submit</button>
                   </div>
                 </div>
-                <label class="label">Message</label>
-                <textarea
-                  class="textarea"
-                  placeholder="Hi, Chase..."
-                ></textarea>
-                <div class="control">
-                  <p>I'll respond as soon as possible (within 24 hours)!</p>
-                  <button class="button is-cd-primary">Submit</button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -258,5 +270,7 @@
         <p>&copy; 2019 Chase Dooley</p>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
